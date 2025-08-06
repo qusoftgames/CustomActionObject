@@ -29,12 +29,17 @@ local CAO = require(game.ReplicatedStorage.CustomActionObject)
 
 -- Bind your mobile action
 ContextActionService:BindAction("Sprint", function() end, true)
-ContextActionService:SetPosition("Sprint", UDim2.new(0.1, 0, 0.5, 0))
+ContextActionService:SetPosition("Sprint", UDim2.new(.7, 0, -0.2, 0))
 ContextActionService:SetTitle("Sprint", "Sprint")
 
 -- Apply default style to the button
 CAO.default(ContextActionService:GetButton("Sprint"))
 ```
+### with module use default
+<img width="1287" height="593" alt="RobloxScreenShot20250807_021937082" src="https://github.com/user-attachments/assets/f4ad76c6-0881-40bb-86de-ee14f2e2219b" />
+
+### without module
+<img width="1287" height="593" alt="RobloxScreenShot20250807_022037352" src="https://github.com/user-attachments/assets/331584eb-2f7c-4a60-b808-9f1e7474489c" />
 
 ## 📄 API Reference (WIP)
 
