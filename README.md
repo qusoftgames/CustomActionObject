@@ -53,5 +53,5 @@ CAO.default(ContextActionService:GetButton("Sprint"))
 
 ## 💬 Credits
 Created by **MBAID**
-Inspired by **TopBarPlus** — for its elegant API and modular design style.
-Special thanks to **M100 (Micamaster100)** — for early ideas that helped shape this module’s direction.
+Inspired to create this module by **M100 (Micamaster100)** — whose work and ideas sparked the original motivation.
+Also influenced by **TopBarPlus** for its clean API and modular structure.
