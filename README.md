@@ -41,19 +41,98 @@ CAO.default(ContextActionService:GetButton("Sprint"))
 ### without module
 <img width="1287" height="593" alt="RobloxScreenShot20250807_022037352" src="https://github.com/user-attachments/assets/331584eb-2f7c-4a60-b808-9f1e7474489c" />
 
-## 📄 API Reference (WIP)
+## 📄 API Reference
 
-| Method                           | Description                               |
-| -------------------------------- | ----------------------------------------- |
-| `.default(button)`               | Apply the default button style            |
-| `.legacy(button)`                | Apply an older-style button design        |
-| `.custom(...)`                   | Fully customizable context button styling |
-| `.custom_legacy(...)`            | Mix of legacy behavior and full styling   |
-| `.SetFont(font)`                 | Set font for button text                  |
-| `.SetActionColor(color)`         | Set color for text & icon                 |
-| `.SetContextColor(color)`        | Set color for background image            |
-| `.SetActionTransparency(value)`  | Set transparency of icon & label          |
-| `.SetContextTransparency(value)` | Set background image transparency         |
+## Functions
+
+### **.default(button)**
+```lua
+CAO.default(ContextActionService:GetButton("Button"))
+```
+Apply the default button style
+
+### .custom(...)
+```lua
+CAO.custom(ContextActionService:GetButton("Button"), 
+	ContextImage:AssetID,
+	ContextTransparency: number,
+	ContextColor3: Color3,
+	ActionTransparency: number,
+	ActionColor3: Color3, 
+	TextFont: Font)
+```
+Fully customizable context button styling 
+
+
+### .legacy(button)
+```lua
+CAO.default(ContextActionService:GetButton("Button"))
+```
+Apply legacy default use two image button design
+
+### .custom_legacy(...)
+```lua
+CAO.custom_legacy((ContextActionService:GetButton("Button"), 
+	ContextImageDefault:AssetID, 
+	ContextImagePressed:AssetID,
+	ContextTransparency: number,
+	ContextColor3: Color3,
+	ActionTransparency: number,
+	ActionColor3: Color3, 
+	TextFont: Font)
+```
+Mix of legacy behavior with full customization
+
+## Methods
+
+### :SetButtonSize(number)
+```lua
+local default = CAO.default(ContextActionService:GetButton("Button"))
+default:SetButtonSize(number)
+```
+Set button size in pixel 
+
+### :SetContextColor(Color3)
+```lua
+local default = CAO.default(ContextActionService:GetButton("Button"))
+default:SetContextColor(Color3)
+```
+Set the background (context) color of the button
+
+### :SetContextTransparency(number)
+```lua
+local default = CAO.default(ContextActionService:GetButton("Button"))
+default:SetContextTransparency(number)
+```
+Set transparency of the button
+
+### :SetFont(font)
+```lua
+local default = CAO.default(ContextActionService:GetButton("Button"))
+default:SetFont(font)
+```
+Set the font for the button's text
+
+### :SetTextSize(number)
+```lua
+local default = CAO.default(ContextActionService:GetButton("Button"))
+default:SetTextSize(number)
+```
+Set the text size in pixel for the button's text
+
+### :SetActionColor(Color3)
+```lua
+local default = CAO.default(ContextActionService:GetButton("Button"))
+default:SetActionColor(color)
+```
+Set the color of the button's text and icon
+
+### :SetActionTransparency(number)
+```lua
+local default = CAO.default(ContextActionService:GetButton("Button"))
+default:SetActionTransparency(number)
+```
+Set transparency for icon and text label
 
 
 ## 💬 Credits
